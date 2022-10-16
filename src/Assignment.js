@@ -1,31 +1,13 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, StatusBar} from 'react-native';
 
-const fruitArray = [
-  {
-    id: 1,
-    name: 'Banana',
-  },
-
-  {
-    id: 2,
-    name: 'Orange',
-  },
-
-  {
-    id: 3,
-    name: 'Apple',
-  },
-];
-
-const Lesson_01 = () => {
+const Assignment = () => {
   React.useEffect(() => {
     functionOne();
   }, []);
 
   const functionOne = () => {
     const name = 'Apple';
-
     // If CONDITIONS
     if (name === 'BlueBerry') {
       console.log('Fruit 1', name);
@@ -79,4 +61,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Lesson_01;
+export default Assignment;
