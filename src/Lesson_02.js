@@ -34,7 +34,10 @@ const Lesson_02 = () => {
   const [selectedItem, setSelectedItem] = React.useState(null);
 
   const onPressFruitItem = item => {
-    setSelectedItem(item);
+    // setSelectedItem(item);
+
+    let newArray = listData.filter(fruit => fruit !== item);
+    setListData(newArray);
   };
 
   const FruitItem = ({item}) => (
