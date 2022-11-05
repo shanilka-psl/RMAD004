@@ -8,7 +8,7 @@ import {
   TextInput,
 } from 'react-native';
 import {NavigationRouts} from '../common/enum';
-
+import Icon from 'react-native-vector-icons/MaterialIcons';
 const Screen_01 = ({navigation}) => {
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
@@ -16,7 +16,7 @@ const Screen_01 = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>{`My Name is ${name}`}</Text>
-
+      <Icon size={30} color="purple" name="home" />
       <TextInput
         placeholder="Enter your Name"
         style={styles.input}
